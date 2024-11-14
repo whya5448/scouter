@@ -531,6 +531,9 @@ public class CounterManager {
 		if (counters.types == null) {
 			counters.types = new Types0(new ArrayList<>());
 		}
+		if (counters.types.objectType == null) {
+			counters.types.objectType = new ArrayList<>();
+		}
 		List<ObjectType0> objectTypes =
 				counters.types.objectType.stream()
 						.collect(Collectors.toMap(v -> v.name, v -> v, (x, y) -> y)).values().stream().collect(Collectors.toList());

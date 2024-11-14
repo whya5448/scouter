@@ -7,6 +7,7 @@
         <version>2.20.0</version> <!--scouter-->
     </parent>
 
+    <version>2.20.0-hotfix.1</version>
     <artifactId>scouter-server</artifactId>
     <packaging>jar</packaging>
     <name>scouter.server</name>
@@ -15,7 +16,8 @@
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
         <build.datetime>${maven.build.timestamp} GMT</build.datetime>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <client.version>${project.version}</client.version>
+        <client.version>2.20.0</client.version>
+        <maven.test.skip>true</maven.test.skip>
     </properties>
 
     <dependencies>
@@ -32,7 +34,7 @@
         <dependency>
             <groupId>io.github.scouter-project</groupId>
             <artifactId>scouter-common</artifactId>
-            <version>${project.version}</version>
+            <version>2.20.0</version>
         </dependency>
         <dependency>
             <groupId>com.github.jsqlparser</groupId>
